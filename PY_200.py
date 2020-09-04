@@ -51,13 +51,22 @@ GlassDefaultArg1: GlassDefaultArg = GlassDefaultArg(200)
 #    Убедитесь, что методы правильно изменяют атрибут occupied_volume.
 
 from GlassAddRemove import GlassAddRemove
-glass10 = GlassAddRemove(200, 150)
-print (glass10)
-glass10.del_water(200)
-print (glass10)
-print (glass10.del_water(200))
+glass5_0 = GlassAddRemove(200, 150)
+print (glass5_0)
+glass5_0.del_water(200)
+print (glass5_0)
+print (glass5_0.del_water(200))
 
 # 6. Создайте три объекта типа GlassAddRemove,
 #    вызовите функцию dir для трёх объектов и для класса GlassAddRemove.
 #    а. Получите типы объектов и класса
 #    б. Проверьте тип созданного объекта.
+
+glass5_1 = GlassAddRemove(200, 200)
+glass5_2 = GlassAddRemove(200, 100)
+glass5_3 = GlassAddRemove(200, 0)
+
+print(type(glass5_1))
+print(dir(glass5_1))
+print(type(GlassAddRemove))
+print(dir(GlassAddRemove))
