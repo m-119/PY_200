@@ -43,9 +43,7 @@ GlassDefaultArg1: GlassDefaultArg = GlassDefaultArg(200)
 #    Опишите результат.
 #    Подсказка: можно ли использовать для аргументов по умолчанию изменяемые типы?
 
-from GlassDefaultArg import GlassDefaultArg
-GlassDefaultArg1: GlassDefaultArg = GlassDefaultArg()
-GlassDefaultArg1: GlassDefaultArg = GlassDefaultArg(200)
+
 
 # 5. Создайте класс GlassAddRemove, добавьте методы add_water, remove_water
 #    Обязательно проверяйте типы (TypeError) и значения переменных (ValueError)
