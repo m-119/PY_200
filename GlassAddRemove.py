@@ -4,7 +4,7 @@ class GlassAddRemove:
     def __init__(self, capacity: float = 200, occupied: float = 0):
         self.capacity_volume: float
         self.occupied_volume: float
-        self.cnt = Glass.cnt
+        self.cnt = type(self).cnt
 
         if not isinstance(capacity, (int, float)):
             raise TypeError("Некоррктный тип capacity")
@@ -20,10 +20,10 @@ class GlassAddRemove:
 
     def __del__(self):
         GlassAddRemove.cnt -= 1
-        print(f"cnt: {Glass.cnt}")
+        print(f"cnt: {type(self).cnt}")
 
     def __str__(self):
-        return f"Glass str: {self.cnt}"
+        return f"--- Glass str: {self.cnt} {self.occupied_volume}"
 
     def __repr__(self):
         return f"Glass repr: {self.cnt}"
@@ -38,4 +38,4 @@ class GlassAddRemove:
 
     def del_water(self, value: float = 0):
         new_val = -value
-        self.add_water(new_val)
+        return self.add_water(new_val)
